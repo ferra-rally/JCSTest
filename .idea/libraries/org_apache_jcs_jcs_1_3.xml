@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="org.apache.jcs:jcs:1.3" type="repository">
+    <properties maven-id="org.apache.jcs:jcs:1.3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jcs-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logkit-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/avalon-framework-4.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/concurrent-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
