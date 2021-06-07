@@ -93,7 +93,8 @@
                 <artifactId>jcs</artifactId>
                 <version>1.3</version>
                 <scope>system</scope>
-                <systemPath>PATH_JCS_FAT_JAR/jcs-1.3-fat.jar</systemPath>
+                <!--<systemPath>PATH_JCS_FAT_JAR/jcs-1.3-fat.jar</systemPath>-->
+                <systemPath>${basedir}/fat-jar/jcs-1.3.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>commons-logging</groupId>
@@ -109,7 +110,7 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>org.jacoco.agent</artifactId>
                 <classifier>runtime</classifier>
-                <version>${jacoco.coverageExperiment.version}</version>
+                <version>0.8.7</version>
             </dependency>
         </dependencies>
 
@@ -118,7 +119,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>${jacoco.coverageExperiment.version}</version>
+                    <version>0.8.7</version>
                     <executions>
                         <!-- NOTE THAT AUTOMATIC REPORTING IS USELESS, AS THE SOURCE FILES OF jcs ARE NEEDED: -->
                         <!-- GENERATE THE REPORTS OFFLINE AS DESCRIBED IN  jacocolibSnippets.txt -->

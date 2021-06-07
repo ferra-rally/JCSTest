@@ -23,26 +23,28 @@ public class RemovalTestUtil {
     private int start;
     private int end;
     private boolean check;
+    private String cache;
 
-    public RemovalTestUtil(int start, int end, boolean check) {
+    public RemovalTestUtil(int start, int end, boolean check, String cache) {
         this.start = start;
         this.end = end;
         this.check = check;
+        this.cache = cache;
     }
 
     @Parameters
     public static Collection<Object []> getTestParameters() {
         return Arrays.asList(new Object[][]{
-                {10, 20, true},
-                {178, 23, true},
-                {0, 0, false},
-                {1, 20, false}
+                {10, 20, true, "testCache1"},
+                {178, 23, true, "testCache1"},
+                {0, 0, false, "testCache1"},
+                {1, 20, false, "testCache1"}
         });
     }
 
     @Before
     public void configure() throws CacheException {
-        jcs = JCS.getInstance("testCache1");
+        jcs = JCS.getInstance(cache);
     }
 
     @Test
