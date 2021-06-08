@@ -1,5 +1,5 @@
 PATH_JACOCO_CLI_JAR="lib/"
-PATH_JCS_SRC="."
+PATH_JCS_SRC="../jcs-1.3"
 PATH_JCS_JAR="lib/"
 PATH_JCS_FAT_JAR="fat-jar/"
 
